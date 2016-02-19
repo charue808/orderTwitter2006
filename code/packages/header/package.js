@@ -18,7 +18,7 @@ Package.onUse(function(api) {
 });
 
 Package.onTest(function(api) {
-  api.use(['practicalmeteor:mocha', 'practicalmeteor:chai']);
+  api.use(['practicalmeteor:mocha', 'practicalmeteor:chai', 'jquery']);
   api.use('charue808:header');
-  api.addFiles('header-tests.js');
+  api.addFiles('header-tests.js', 'client');
 });
